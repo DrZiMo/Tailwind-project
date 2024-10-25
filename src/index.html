@@ -4,17 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lilita+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
 
-<body>
-    <div class="container w-[500px] border-1 border-black border-solid">
-        <div class="logo-part">
-            <div class="logo font-bold">AMPIRE</div>
+<body class="font-lexend font-light">
+    <!-- Header -->
+    <div class="header border-b bg-white bg-opacity-80 backdrop-blur-[10px] sticky top-0 z-[1000]">
+        <div class="max-w-5xl mx-auto py-3 flex justify-between items-center">
+            <div class="logo-part">
+                <div class="logo font-medium text-[1.4rem]">ampire</div>
+            </div>
+            <div class="nav-part flex items-center gap-7">
+                <div class="nav">
+                    <ul class="flex gap-7">
+                        <li>Solution</li>
+                        <li>Customers</li>
+                        <li>Pricing</li>
+                        <li>Blog</li>
+                        <li>Company</li>
+                    </ul>
+                </div>
+                <div class="divider w-[0.5px] h-6 bg-gray-300"></div>
+                <div class="buttons-part flex gap-3">
+                    <button
+                        class="text-blue-600 hover:bg-blue-300 transition border-blue-400 border px-3 py-1 bg-blue-100 rounded-full">Gestarted</button>
+                    <button
+                        class="text-gray-400 border hover:bg-gray-200 transition border-gray-300 px-[0.6rem] py-1 rounded-full bg-gray-100"><i
+                            class="fa-solid fa-moon"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="nav-part"></div>
     </div>
+
+    <!-- Hero section -->
+    <div class="hero max-w-5xl mx-auto mt-20">
+        <div class="hero-main-text text-6xl font-bold text-[#00325e] mb-[-5rem]">
+            Desing, Build, <span
+                class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Scale</span>
+        </div>
+        <div class="hero-content gap-5 grid grid-cols-2 items-center pt-10">
+            <div class="left-part">
+                <div class="font-light mt-10">Computers used to be magical. But much of that magic has been lost over
+                    time,
+                    replaced by subpar tools and practices that slow teams down and hold great work back.</div>
+                <div
+                    class="input-part flex gap-2 border items-center pt-2 pb-2 pr-2 pl-5 rounded-full my-10 shadow-[0px_2px_4px_rgba(0,0,0,0.1)]">
+                    <i class="fa-solid fa-envelope text-gray-400"></i>
+                    <input type="text" placeholder="Your mail address" class="flex-grow ml-2 outline-none">
+                    <button class="bg-blue-700 px-3 py-2 rounded-full text-white hover:bg-blue-800 transition">Get
+                        started</button>
+                </div>
+                <div class="team">
+                    <div>From the most talanted <span class="text-blue-500 underline cursor-pointer">Team!</span></div>
+                    <div class="team-members flex items-center mt-6 -space-x-[10px]">
+                        <img src="../Images/profile1.jpg"
+                            class="w-11 h-11 rounded-full object-cover border-[3px] border-gray-200 z-10"
+                            alt="Profile 1">
+                        <img src="../Images/profile2.jpg"
+                            class="w-11 h-11 rounded-full object-cover border-[3px] border-gray-200 z-10"
+                            alt="Profile 2">
+                        <img src="../Images/profile3.jpg"
+                            class="w-11 h-11 rounded-full object-cover border-[3px] border-gray-200 z-10"
+                            alt="Profile 3">
+                        <img src="../Images/profile4.jpg"
+                            class="w-11 h-11 rounded-full object-cover border-[3px] border-gray-200 z-10"
+                            alt="Profile 4">
+                        <img src="../Images/profile5.jpg"
+                            class="w-11 h-11 rounded-full object-cover border-[3px] border-gray-200 z-10"
+                            alt="Profile 5">
+                    </div>
+                </div>
+            </div>
+            <div class="right-part">
+                <img src="../Images/hero.svg">
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f900e39f72.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

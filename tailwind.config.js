@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lilitaOne: ["Lilita One", "serif"],
+        lexend: ["Lexend", "serif"]
+      }
+    },
   },
   plugins: [],
 }
